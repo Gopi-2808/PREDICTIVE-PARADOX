@@ -21,8 +21,7 @@ This repository contains a machine learning pipeline to predict the next hour's 
 * **External Factors:** Integrated temperature, GDP, and Population data, along with weekend indicators, to provide full context to the model.
 
 ### 3. Key Insights from Feature Importance
-* **History is King:** The most recent demand (`demand_lag_1`) and previous day/week patterns are the strongest predictors.
-* **Time vs. Weather:** The specific time of day (`hour_cos`) is a more significant driver of demand than external weather factors.
+* **Strongest Predictor:** "Time-of-day cycles (hour_cos, hour_sin) are the most significant predictors, followed closely by recent historical demand (demand_lag_1). This proves that demand follows a highly predictable daily schedule."* **Time vs. Weather:** The specific time of day (`hour_cos`) is a more significant driver of demand than external weather factors.
 * **Stability Matters:** Recent demand fluctuations (`rolling_std_6`) are highly important for the model to adjust its predictions for the next hour.
 * **Economic Baseline:** Population and GDP help set the structural baseline, but the model relies mostly on short-term historical data for accuracy.
 
