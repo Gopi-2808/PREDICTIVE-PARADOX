@@ -1,7 +1,4 @@
-# PREDICTIVE-PARADOX
-A predictive machine learning model to forecast the next hour's electricity demand (demand_mw) on the national grid.
-
-# Predictive Paradox: Electricity Demand Forecasting
+# PREDICTIVE-PARADOX: Electricity Demand Forecasting
 
 ## Project Overview
 This repository contains a machine learning pipeline to predict the next hour's electricity demand on the national grid using LightGBM.
@@ -30,7 +27,7 @@ This repository contains a machine learning pipeline to predict the next hour's 
 * **Economic Baseline:** Population and GDP help set the structural baseline, but the model relies mostly on short-term historical data for accuracy.
 
 ## Results
-* **Model:** LightGBM Regressor (Learning rate: 0.005, 5000 estimators).
+* **Model:** LightGBM Regressor (Learning rate: 0.005, 2000 estimators).
 * **Training Period:** Data up to the end of 2023.
 * **Testing Period:** Starting from January 2024.
 * **Performance:** Achieved an optimized **MAPE of 1.7574%**.
